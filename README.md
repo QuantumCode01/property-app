@@ -1,41 +1,118 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Property Listing App
+
+A modern and SEO-friendly **Property Listing Web Application** built using Next.js (App Router). It supports server-side rendering, search functionality, pagination, and dynamic routing.
+
+---
+
+## Features
+
+*  Search properties by name, location, amenities, price, and rating
+*  Pagination for browsing multiple listings
+*  Server-Side Rendering (SSR) with Next.js
+*  Fully responsive UI using Tailwind CSS
+*  Dynamic property detail pages
+*  SEO optimized (Meta tags, Open Graph, Sitemap, Robots.txt)
+
+---
+
+## Tech Stack
+
+* **Framework:** Next.js (App Router)
+* **Styling:** Tailwind CSS
+* **Language:** JavaScript
+* **SEO:** Metadata API, Sitemap, Robots.txt
+
+---
+
+## Folder Structure
+
+```
+app/
+  layout.js
+  page.js
+  sitemap.js
+  robots.js
+
+components/
+  Navbar.js
+  PropertyCard.js
+
+data/
+  properties.js
+
+public/
+  og-image.png
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repository
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+git clone https://github.com/QuantumCode01/property-app.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Go to project folder
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+cd property-app
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Install dependencies
 
-## Learn More
+```
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Run the development server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Open: http://localhost:3000
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Environment Variables
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# property-app
-Created on next js this with ssr
->>>>>>> 24bf740115cae2e62f1a4432062c77cb70505f41
+Create a `.env.local` file:
+
+```
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+```
+
+For production:
+
+```
+NEXT_PUBLIC_SITE_URL=https://yourdomain.com
+```
+
+---
+
+## 📈 SEO Setup
+
+This project includes:
+
+* Dynamic metadata using `generateMetadata`
+* Open Graph tags for social sharing
+* Canonical URLs
+* Sitemap → `/sitemap.xml`
+* Robots → `/robots.txt`
+
+
+---
+
+##  Author
+
+**Saurabh Singh**
+Frontend Developer
+
+---
+
+
+
+
