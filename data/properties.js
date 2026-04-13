@@ -2,19 +2,20 @@ const properties = [
   {
     id: "1",
     name: "Urbanza Suites",
-    location: "Los Angeles, California, USA",
+    location: "Los Angeles, USA",
     rating: 4.1,
     reviews: 120,
     price: 33200,
     per: "night",
+    rooms: 3,
+    description: "Modern luxury suites with skyline views and premium comfort.",
+    amenities: ["WiFi", "Breakfast", "Room Service"],
     images: [
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688",
-      "https://images.unsplash.com/photo-1560184897-ae75f418493e",
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32"
-    ],
-    description: "Luxury suites with modern interiors and city skyline views.",
-    amenities: ["Free WiFi", "Breakfast", "Room Service"]
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945",
+      "https://images.unsplash.com/photo-1618773928121-c32242e63f39",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427"
+    ]
   },
   {
     id: "2",
@@ -24,14 +25,15 @@ const properties = [
     reviews: 98,
     price: 18500,
     per: "night",
+    rooms: 2,
+    description: "Beachside villa with private pool and stunning ocean views.",
+    amenities: ["Pool", "WiFi", "Breakfast"],
     images: [
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
-    ],
-    description: "Beachfront villa with private pool and ocean view.",
-    amenities: ["Pool", "Free WiFi", "Breakfast"]
+      "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1200&auto=format",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=1200&auto=format"
+    ]
   },
   {
     id: "3",
@@ -41,14 +43,15 @@ const properties = [
     reviews: 150,
     price: 15000,
     per: "night",
+    rooms: 4,
+    description: "Peaceful wooden cabin surrounded by mountains and nature.",
+    amenities: ["Fireplace", "Parking", "Mountain View"],
     images: [
-      "https://images.unsplash.com/photo-1518732714860-b62714ce0c59",
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
-      "https://images.unsplash.com/photo-1509316785289-025f5b846b35"
-    ],
-    description: "Peaceful wooden cabin surrounded by mountains.",
-    amenities: ["Fireplace", "Hiking Trails", "Parking"]
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+      "https://images.unsplash.com/photo-1551776235-dde6d4829808"
+    ]
   },
   {
     id: "4",
@@ -58,14 +61,15 @@ const properties = [
     reviews: 210,
     price: 37500,
     per: "night",
+    rooms: 3,
+    description: "High-rise apartments in the heart of the city.",
+    amenities: ["Gym", "WiFi", "City View"],
     images: [
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
-      "https://images.unsplash.com/photo-1522098543979-ffc7f79d1f3a",
-      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df"
-    ],
-    description: "Modern high-rise apartments in the heart of NYC.",
-    amenities: ["Gym", "WiFi", "City View"]
+      "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d",
+      "https://images.unsplash.com/photo-1560185008-b033106af5c3",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4"
+    ]
   },
   {
     id: "5",
@@ -75,14 +79,15 @@ const properties = [
     reviews: 320,
     price: 25000,
     per: "night",
+    rooms: 4,
+    description: "Royal palace-style hotel with heritage architecture.",
+    amenities: ["Pool", "Spa", "Breakfast"],
     images: [
       "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
-    ],
-    description: "Luxury heritage stay with royal architecture.",
-    amenities: ["Pool", "Spa", "Breakfast"]
+      "https://images.unsplash.com/photo-1578898886225-c7c894047899",
+      "https://images.unsplash.com/photo-1560448204-603b3fc33ddc",
+      "https://images.unsplash.com/photo-1560448204-61dc36dc98c8"
+    ]
   },
   {
     id: "6",
@@ -92,15 +97,18 @@ const properties = [
     reviews: 140,
     price: 13500,
     per: "night",
+    rooms: 2,
+    description: "Resort surrounded by greenery and peaceful hills.",
+    amenities: ["Nature View", "Bonfire", "Breakfast"],
     images: [
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
-      "https://images.unsplash.com/photo-1509316785289-025f5b846b35"
-    ],
-    description: "Surrounded by tea gardens and misty hills.",
-    amenities: ["Nature View", "Bonfire", "Breakfast"]
+      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427",
+      "https://images.unsplash.com/photo-1598928636135-d146006ff4be",
+      "https://images.unsplash.com/photo-1584132967334-10e028bd69f7"
+    ]
   },
+
+
   {
     id: "7",
     name: "Desert Camp Stay",
@@ -109,14 +117,15 @@ const properties = [
     reviews: 88,
     price: 10000,
     per: "night",
+    rooms: 2,
+    description: "Desert camping with cultural nights and safari.",
+    amenities: ["Camel Safari", "Dinner", "Bonfire"],
     images: [
       "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      "https://images.unsplash.com/photo-1505691723518-36a5ac3b2a24",
-      "https://images.unsplash.com/photo-1509316785289-025f5b846b35"
-    ],
-    description: "Luxury desert camping with cultural shows.",
-    amenities: ["Camel Safari", "Bonfire", "Dinner"]
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+      "https://images.unsplash.com/photo-1611892440504-42a792e24d32",
+      "https://images.unsplash.com/photo-1590490359683-658d3d23f972"
+    ]
   },
   {
     id: "8",
@@ -126,32 +135,33 @@ const properties = [
     reviews: 260,
     price: 7500,
     per: "night",
+    rooms: 1,
+    description: "Compact capsule stay with modern facilities.",
+    amenities: ["WiFi", "Locker", "Shared Lounge"],
     images: [
-     
       "https://images.unsplash.com/photo-1496417263034-38ec4f0b665a",
-      "https://images.unsplash.com/photo-1508009603885-50cf7c579365",
-       "https://images.unsplash.com/photo-1501117716987-c8e1ecb2108a",
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae"
-    ],
-    description: "Modern capsule living experience in Tokyo.",
-    amenities: ["WiFi", "Locker", "Shared Lounge"]
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+      "https://images.unsplash.com/photo-1590490360182-c33d57733427",
+      "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf"
+    ]
   },
   {
     id: "9",
     name: "Seaside Paradise",
     location: "Maldives",
-    rating: 5.0,
+    rating: 5,
     reviews: 410,
     price: 75000,
     per: "night",
+    rooms: 4,
+    description: "Luxury overwater villas with private beach access.",
+    amenities: ["Private Pool", "Beach Access", "Spa"],
     images: [
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2"
-    ],
-    description: "Private overwater villas with crystal clear water.",
-    amenities: ["Private Pool", "Beach Access", "Spa"]
+      "https://images.unsplash.com/photo-1501117716987-c8e1ecb2108a",
+      "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2",
+      "https://images.unsplash.com/photo-1590490359683-658d3d23f972"
+    ]
   },
   {
     id: "10",
@@ -161,355 +171,18 @@ const properties = [
     reviews: 190,
     price: 29000,
     per: "night",
+    rooms: 3,
+    description: "Stay near major attractions in central London.",
+    amenities: ["WiFi", "Breakfast", "Metro Access"],
     images: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df",
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae"
-    ],
-    description: "Stay in the heart of London near major attractions.",
-    amenities: ["WiFi", "Breakfast", "Metro Access"]
-  },
-  {
-    id: "11",
-    name: "Backwaters Houseboat",
-    location: "Alleppey, Kerala, India",
-    rating: 4.6,
-    reviews: 175,
-    price: 16000,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
-    ],
-    description: "Serene houseboat experience on Kerala backwaters.",
-    amenities: ["Boat Ride", "Breakfast", "Fishing"]
-  },
-  {
-    id: "12",
-    name: "Dubai Sky Tower",
-    location: "Dubai, UAE",
-    rating: 4.8,
-    reviews: 305,
-    price: 62000,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
-      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae",
-      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df"
-    ],
-    description: "Ultra-luxury tower stay with Burj Khalifa views.",
-    amenities: ["Pool", "Gym", "City View"]
-  },
-  {
-    id: "13",
-    name: "Coorg Jungle Lodge",
-    location: "Coorg, Karnataka, India",
-    rating: 4.3,
-    reviews: 112,
-    price: 11500,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
-      "https://images.unsplash.com/photo-1509316785289-025f5b846b35",
-      "https://images.unsplash.com/photo-1518732714860-b62714ce0c59",
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858"
-    ],
-    description: "Eco lodge nestled in coffee plantations and jungle.",
-    amenities: ["Nature Walk", "Bonfire", "Organic Meals"]
-  },
-  {
-    id: "14",
-    name: "Paris Boutique Inn",
-    location: "Paris, France",
-    rating: 4.4,
-    reviews: 230,
-    price: 28000,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
-    ],
-    description: "Charming boutique hotel near the Eiffel Tower.",
-    amenities: ["Breakfast", "WiFi", "Concierge"]
-  },
-  {
-    id: "15",
-    name: "Rishikesh Riverside Camp",
-    location: "Rishikesh, Uttarakhand, India",
-    rating: 4.2,
-    reviews: 95,
-    price: 8500,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1509316785289-025f5b846b35",
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
-      "https://images.unsplash.com/photo-1518732714860-b62714ce0c59",
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
-    ],
-    description: "Camping by the Ganges with yoga and rafting.",
-    amenities: ["River Rafting", "Yoga", "Bonfire"]
-  },
-  {
-    id: "16",
-    name: "Santorini Sunset Villa",
-    location: "Santorini, Greece",
-    rating: 5.0,
-    reviews: 380,
-    price: 68000,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-      "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2",
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688"
-    ],
-    description: "Iconic blue-dome villa with stunning caldera views.",
-    amenities: ["Private Pool", "Sea View", "Breakfast"]
-  },
-  {
-    id: "17",
-    name: "Shimla Pine Cottage",
-    location: "Shimla, Himachal Pradesh, India",
-    rating: 4.0,
-    reviews: 134,
-    price: 9500,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-      "https://images.unsplash.com/photo-1518732714860-b62714ce0c59",
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
-      "https://images.unsplash.com/photo-1509316785289-025f5b846b35"
-    ],
-    description: "Cozy pine cottage with snow views and warm fireplace.",
-    amenities: ["Fireplace", "Mountain View", "Parking"]
-  },
-  {
-    id: "18",
-    name: "Bali Bamboo Retreat",
-    location: "Ubud, Bali, Indonesia",
-    rating: 4.6,
-    reviews: 200,
-    price: 14000,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
-    ],
-    description: "Eco bamboo retreat surrounded by rice terraces.",
-    amenities: ["Yoga", "Spa", "Organic Breakfast"]
-  },
-  {
-    id: "19",
-    name: "Kolkata Heritage Mansion",
-    location: "Kolkata, West Bengal, India",
-    rating: 3.8,
-    reviews: 67,
-    price: 7800,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
-      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e"
-    ],
-    description: "Colonial-era mansion with vintage decor and charm.",
-    amenities: ["Breakfast", "Library", "Garden"]
-  },
-  {
-    id: "20",
-    name: "Singapore Marina Hotel",
-    location: "Singapore",
-    rating: 4.7,
-    reviews: 290,
-    price: 42000,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
-      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df",
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
-    ],
-    description: "Iconic hotel with rooftop infinity pool overlooking Marina Bay.",
-    amenities: ["Infinity Pool", "Gym", "City View"]
-  },
-  {
-    id: "21",
-    name: "Udaipur Lake Palace",
-    location: "Udaipur, Rajasthan, India",
-    rating: 4.9,
-    reviews: 345,
-    price: 45000,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4",
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34"
-    ],
-    description: "Floating palace hotel on Lake Pichola with royal experience.",
-    amenities: ["Pool", "Spa", "Lake View"]
-  },
-  {
-    id: "22",
-    name: "Darjeeling Tea Bungalow",
-    location: "Darjeeling, West Bengal, India",
-    rating: 4.3,
-    reviews: 89,
-    price: 10500,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-      "https://images.unsplash.com/photo-1518732714860-b62714ce0c59",
-      "https://images.unsplash.com/photo-1509316785289-025f5b846b35"
-    ],
-    description: "Colonial tea bungalow with Kanchenjunga views.",
-    amenities: ["Tea Tasting", "Mountain View", "Breakfast"]
-  },
-  {
-    id: "23",
-    name: "New Zealand Farm Stay",
-    location: "Queenstown, New Zealand",
-    rating: 4.5,
-    reviews: 160,
-    price: 22000,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429",
-      "https://images.unsplash.com/photo-1509316785289-025f5b846b35",
-      "https://images.unsplash.com/photo-1518732714860-b62714ce0c59"
-    ],
-    description: "Scenic farm stay with adventure sports nearby.",
-    amenities: ["Hiking", "Parking", "Farm Breakfast"]
-  },
-  {
-    id: "24",
-    name: "Varanasi Ghats Homestay",
-    location: "Varanasi, Uttar Pradesh, India",
-    rating: 3.9,
-    reviews: 74,
-    price: 6500,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb",
-      "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4"
-    ],
-    description: "Authentic riverside homestay with Ganga aarti views.",
-    amenities: ["River View", "Breakfast", "Boat Ride"]
-  },
-  {
-    id: "25",
-    name: "Bangkok Rooftop Hotel",
-    location: "Bangkok, Thailand",
-    rating: 4.4,
-    reviews: 215,
-    price: 19500,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1508009603885-50cf7c579365",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
-      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df",
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae"
-    ],
-    description: "Trendy rooftop hotel in the heart of Bangkok.",
-    amenities: ["Rooftop Pool", "Bar", "City View"]
-  },
-  {
-    id: "26",
-    name: "Andaman Beach Resort",
-    location: "Port Blair, Andaman, India",
-    rating: 4.6,
-    reviews: 182,
-    price: 17500,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2",
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470"
-    ],
-    description: "Beachfront resort with snorkeling and water sports.",
-    amenities: ["Beach Access", "Snorkeling", "Breakfast"]
-  },
-  {
-    id: "27",
-    name: "Tuscany Vineyard Stay",
-    location: "Tuscany, Italy",
-    rating: 4.8,
-    reviews: 270,
-    price: 38000,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34",
-      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
-      "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
-    ],
-    description: "Rustic vineyard villa with wine tasting and rolling hills.",
-    amenities: ["Wine Tasting", "Pool", "Breakfast"]
-  },
-  {
-    id: "28",
-    name: "Spiti Valley Monastery Stay",
-    location: "Spiti, Himachal Pradesh, India",
-    rating: 4.1,
-    reviews: 56,
-    price: 7000,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1518732714860-b62714ce0c59",
-      "https://images.unsplash.com/photo-1509316785289-025f5b846b35",
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"
-    ],
-    description: "Unique monastery-style stay in the remote Spiti Valley.",
-    amenities: ["Meditation", "Mountain View", "Local Meals"]
-  },
-  {
-    id: "29",
-    name: "Cape Town Clifftop Lodge",
-    location: "Cape Town, South Africa",
-    rating: 4.7,
-    reviews: 198,
-    price: 32000,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1500375592092-40eb2168fd21",
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470",
-      "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2",
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
-    ],
-    description: "Clifftop lodge with panoramic Atlantic Ocean views.",
-    amenities: ["Ocean View", "Pool", "Breakfast"]
-  },
-  {
-    id: "30",
-    name: "Munnar Mist Villa",
-    location: "Munnar, Kerala, India",
-    rating: 4.5,
-    reviews: 143,
-    price: 12500,
-    per: "night",
-    images: [
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e",
-      "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-      "https://images.unsplash.com/photo-1518732714860-b62714ce0c59"
-    ],
-    description: "Misty hill villa surrounded by tea estates and waterfalls.",
-    amenities: ["Nature Walk", "Tea Tasting", "Breakfast"]
+      "https://images.unsplash.com/photo-1560185007-c5ca9d2c014d",
+      "https://images.unsplash.com/photo-1560185008-b033106af5c3",
+      "https://images.unsplash.com/photo-1560185127-6ed189bf02f4"
+    ]
   }
+
+
 ];
 
 export default properties;

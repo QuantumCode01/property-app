@@ -74,6 +74,7 @@ export default async function PropertyDetail({ params }) {
             alt={property.name}
             fill
             priority
+              unoptimized
             className="object-cover"
           />
         </div>
@@ -86,6 +87,8 @@ export default async function PropertyDetail({ params }) {
                 src={img}
                 alt={property.name}
                 fill
+                 priority
+                  unoptimized
                 className="object-cover"
               />
             </div>
@@ -110,7 +113,9 @@ export default async function PropertyDetail({ params }) {
           Rs {property.price} / <span className="text-lg text-gray-600">{property.per}</span>
         </p>
       </div>
-
+ <p className="text-lg text-gray-700">
+         Rooms: {property.rooms}
+        </p>
       <div className="flex flex-wrap gap-2 mt-2">
         {property.amenities.map((a, i) => (
           <span
